@@ -1,0 +1,107 @@
+.grid-container {
+  display: grid;
+  grid-template-areas: 
+  "text image"
+  "sem-search sem-search";
+  grid-template-rows: 420px 1fr;
+  grid-template-columns: 430px 430px;
+  grid-gap: 40px;
+}
+
+.main-text-block {
+  grid-area: text;
+  background-color: #ECECEC;
+  border-radius: 18px;
+  width: 370px;
+  padding: 5px 25px;
+  height: 420px;
+}
+
+.main-text-block h2 {
+  font-size: 28px;
+  margin-top: 15px;
+}
+
+.main-text-block p {
+  font-size: 18px;
+}
+
+.ontology-image {
+  grid-area: image;
+  align-self: center;
+  justify-self: end;
+}
+
+.semantic-search-block {
+  grid-area: sem-search;
+  background-color: #ECECEC;
+  border-radius: 18px;
+}
+
+.semantic-search-block h2 {
+  padding-top: 5px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.circles-block {
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+}
+
+.arrow {
+  background-image: url(resources/icons/arrow.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  margin: 20px 10px 0px 10px;
+}
+
+.circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 120px;
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.query-circle {
+  background-color: #A34ECD;
+}
+
+.ontology-circle {
+  background-color: #E65B7D;
+}
+
+.database-circle {
+  background-color: #269FCA;
+}
+
+.results-circle {
+  background-image: url(resources/images/oatmeal-muffins.jpg);
+  background-size: contain;
+}
+
+.description-block {
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+}
+
+.description {
+  width: 120px;
+  height: 120px;
+  margin: 10px 60px 10px 0px;
+  text-align: center;
+}
+
+.description:last-child {
+  margin-right: 0px;
+}

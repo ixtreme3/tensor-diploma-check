@@ -1,0 +1,161 @@
+.main-text-block {
+  background-color: #ECECEC;
+  border-radius: 18px;
+  width: 250px;
+  height: 240px;
+  padding: 5px 25px;
+}
+
+.main-text-block h2 {
+  font-size: 28px;
+  margin-top: 15px;
+}
+
+.main-text-block p {
+  font-size: 18px;
+}
+
+.picture-block {
+  display: flex;
+  justify-content: end;
+  width: 450px;
+  height: 240px;
+}
+
+.picture-block img:nth-child(2n) {
+  align-self: flex-end;
+}
+
+.first-row-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-container {
+  display: grid;
+  grid-template-areas: 
+  "search search search-button"
+  "filter-key filter-value add-button";
+  grid-template-rows: 40px 40px ;
+  grid-template-columns: 390px 390px 100px;
+  grid-gap: 10px;
+  margin-top: 40px;
+}
+
+.input-search {
+  grid-area: search;
+  padding-left: 10px;
+  border-radius: 18px;
+  border: 1px solid #C4C4C4;
+  font-size: 18px;
+}
+
+.search-button {
+  grid-area: search-button;
+  border-radius: 18px;
+  border: 1px solid #C4C4C4;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.select-filter {
+  grid-area: filter-key;
+  padding-left: 10px;
+  border-radius: 18px;
+  border: 1px solid #C4C4C4;
+  font-size: 18px;
+}
+
+.input-filter {
+  grid-area: filter-value;
+  padding-left: 10px;
+  border-radius: 18px;
+  border: 1px solid #C4C4C4;
+  font-size: 18px;
+}
+
+.add-filter-button {
+  grid-area: add-button;
+  border-radius: 18px;
+  border: 1px solid #C4C4C4;
+  font-size: 18px;
+  background-color: #00843C;
+  font-weight: 600;
+}
+
+.text-block {
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  background-color: #ECECEC;
+  width: 190px;
+  height: 40px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 40px;
+  border-radius: 18px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.picked-filters {
+  margin-top: 10px;
+  padding: 7px;
+  background-color: white;
+  border: 1px solid #C4C4C4;
+  border-radius: 18px;
+}
+
+.picked-filter {
+  display: inline-flex;
+  align-items: center; 
+  background-color: #C4C4C4;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  padding: 5px 10px;
+  border-radius: 18px;
+}
+
+.filter-delete-button {
+  background-color: #F1240F;
+  width: 25px;
+  height: 25px;
+  margin-left: 5px;
+  border-radius: 18px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 25px;
+}
+
+.recipe-card {
+  display: flex;
+  background-color: #ECECEC;
+  border-radius: 18px;
+  margin-top: 15px;
+
+}
+
+.recipe-picture-container {
+  margin: 25px 30px;
+  width: 220px;
+  height: 150px; 
+}
+
+.recipe-picture {
+  height: 100%; 
+  width: 100%;
+  object-fit: cover;
+}
+
+.recipe-description h3 {
+  margin-top: 25px;
+}
+
+.recipe-description h3 a {
+  text-decoration: none;
+  color: black;
+}
+
+.recipe-description p {
+  margin: 11px 0px;
+}
