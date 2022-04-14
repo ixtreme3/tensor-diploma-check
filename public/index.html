@@ -2,36 +2,91 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+    <link rel="icon" href="resources/icons/header-logo.svg" />
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+    <link rel="stylesheet" href="common-styles.css">
+    <link rel="stylesheet" href="main-page-styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>Spoonacular client</title>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    <div class="root">
+      <div class="centered">
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+        <header class="header">
+          <a class="logo-image" href=" ">
+            <img src="resources/icons/header-logo.svg" width="100" height="100">
+          </a>
+          <div class="logo-text">Spoonacular client</div>
+          <div class="menu">
+            <ul class="menu-elements-list">
+              <li class="search-recipe-button"><a class="menu-button-link" href="search-recipes.html">Search Recipes</a></li>
+              <li class="random-recipes-button"><a class="menu-button-link" href="random-recipes-page.html">Get Random Recipes</a></li>
+            </ul>
+          </div>
+        </header>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+        <div class="grid-container">
+          <div class="main-text-block">
+            <h2 class="main-text-heading">Smarter recipe search than ever</h2>
+            <p class="main-text-description">Spoonacular API uses complex food ontology which makes it possible to understand the relationships between ingredients, recipes, nutrition, allergens, and more.</p>
+            <p class="main-text-description">Service understands that "nut free" muffins can't contain pecans (even if the recipe doesn't mention "nuts" anywhere!) and automatically determines that a recipe with Worcestershire sauce isn't vegetarian.</p>
+            <p class="main-text-description">Go ahead and try one of the available endpoints!</p>
+          </div>
+
+          <img src="resources/images/ontology.svg" class="ontology-image" width="390" height="405">
+
+          <div class="semantic-search-block">
+            <h2 class="semantic-search-block-description">SEMANTIC SEARCH</h2>
+            <div class="circles-block">
+              <div class="logo-circle">
+                <img src="resources/icons/logo-simple-framed-green-gradient.svg" width="120" height="120">
+              </div>
+              <div class="arrow"></div>
+              <div class="circle query-circle">
+                Query
+              </div>
+              <div class="arrow"></div>
+              <div class="circle ontology-circle">
+                Ontology
+              </div>
+              <div class="arrow"></div>
+              <div class="circle database-circle">
+                Database
+              </div>
+              <div class="arrow"></div>
+              <div class="circle results-circle">
+                Right Results
+              </div>
+            </div>
+            <div class="circles-description-block">
+              <div class="circle-description"></div>
+              <div class="circle-description">
+                “Gluten free muffins without nuts”
+              </div>
+              <div class="circle-description">
+                <span class="bold-text">Category</span>: muffins <span class="bold-text">No gluten</span> (-wheat, -spelt) <span class="bold-text">No nuts</span> (-pecans, -almonds)
+              </div>
+              <div class="circle-description">
+                372 matching recipes
+              </div>
+              <div class="circle-description">
+                Carrot Oat Muffins
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <footer class="footer">
+      <a class="github-link" href="https://github.com/ixtreme3">
+        <img class="github-image" src="resources/icons/github.png" width="30" height="30">
+        <div>Ivan Nemtsev</div>
+      </a>
+    </footer>
   </body>
 </html>
