@@ -17,12 +17,12 @@
   height: 420px;
 }
 
-.main-text-block h2 {
+.main-text-heading {
   font-size: 28px;
   margin-top: 15px;
 }
 
-.main-text-block p {
+.main-text-description {
   font-size: 18px;
 }
 
@@ -38,7 +38,7 @@
   border-radius: 18px;
 }
 
-.semantic-search-block h2 {
+.semantic-search-block-description {
   padding-top: 5px;
   margin-bottom: 30px;
   text-align: center;
@@ -89,19 +89,23 @@
   background-size: contain;
 }
 
-.description-block {
+.circles-description-block {
   display: flex;
   align-items: center; 
   justify-content: center;
 }
 
-.description {
+.circle-description {
   width: 120px;
   height: 120px;
   margin: 10px 60px 10px 0px;
   text-align: center;
 }
 
-.description:last-child {
+.bold-text {
+  font-weight: bold;
+}
+
+.circle-description:last-child {
   margin-right: 0px;
 }

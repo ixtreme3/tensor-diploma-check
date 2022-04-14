@@ -6,14 +6,9 @@
   border-radius: 18px;
 }
 
-h3 {
+.recipe-subheading {
   margin-top: 20px;
   margin-bottom: 5px;
-}
-
-ul {
-  margin: 5px 0px;
-  padding-left: 25px;
 }
 
 .recipe-picture-container {

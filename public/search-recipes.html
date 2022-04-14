@@ -15,35 +15,35 @@
   <body>
     <div class="root">
       <div class="centered">
-        <header>
+        <header class="header">
           <a class="logo-image" href="index.html">
             <img src="resources/icons/header-logo.svg" width="100" height="100">
           </a>
           <div class="logo-text">Spoonacular client</div>
           <div class="menu">
-            <ul>
-              <li class="search-recipe-button button-active"><a href="search-recipes.html">Search Recipes</a></li>
-              <li class="random-recipes-button"><a href="random-recipes-page.html">Get Random Recipes</a></li>
+            <ul class="menu-elements-list">
+              <li class="search-recipe-button button-active"><a class="menu-button-link" href="search-recipes.html">Search Recipes</a></li>
+              <li class="random-recipes-button"><a class="menu-button-link" href="random-recipes-page.html">Get Random Recipes</a></li>
             </ul>
           </div>
         </header>
 
         <div class="first-row-container">
           <div class="main-text-block">
-            <h2>Hundreds of thousands of recipes</h2>
-            <p>are available on this page through natural language queries and advanced filtering</p>
+            <h2 class="main-text-heading">Hundreds of thousands of recipes</h2>
+            <p class="main-text-description">are available on this page through natural language queries and advanced filtering</p>
           </div>
           <div class="picture-block">
-            <img src="resources/icons/hamburger.svg" width="100px" height="100px">
-            <img src="resources/icons/kitchen.svg" width="100px" height="100px">
-            <img src="resources/icons/shopping-basket.svg" width="100px" height="100px">
-            <img src="resources/icons/vegetarian-food.svg" width="100px" height="100px">
+            <img class="picture-hamburger" src="resources/icons/hamburger.svg" width="100" height="100">
+            <img class="picture-kitchen" src="resources/icons/kitchen.svg" width="100" height="100">
+            <img class="picture-shopping-basket" src="resources/icons/shopping-basket.svg" width="100" height="100">
+            <img class="picture-vegetarian-food" src="resources/icons/vegetarian-food.svg" width="100" height="100">
           </div>
         </div>
 
         <form action="" method="">
           <div class="form-container">
-            <input type="search" name="search-query" class="input-search">
+            <input type="search" name="search-query" class="input-search" value="Pasta">
             <button class="search-button">Search</button>
 
             <select name="filter-name" class="select-filter">
@@ -88,7 +88,7 @@
               <img src="resources/images/pasta.jpg" alt="" class="recipe-picture">
             </div>
             <div class="recipe-description">
-              <h3 class="recipe-name"><a href="recipe-page.html">Pasta With Gorgonzola Sauce</a></h3>
+              <h3 class="recipe-name"><a class="recipe-name-link" href="recipe-page.html">Pasta With Gorgonzola Sauce</a></h3>
               <p class="calories">Calories: </p>
               <p class="protein">Protein: </p>
               <p class="fat">Fat: </p>
@@ -100,7 +100,7 @@
               <img src="resources/images/pasta.jpg" alt="" class="recipe-picture">
             </div>
             <div class="recipe-description">
-              <h3 class="recipe-name"><a href="recipe-page.html">Pasta With Gorgonzola Sauce</a></h3>
+              <h3 class="recipe-name"><a class="recipe-name-link" href="recipe-page.html">Pasta With Gorgonzola Sauce</a></h3>
               <p class="calories">Calories: </p>
               <p class="protein">Protein: </p>
               <p class="fat">Fat: </p>
@@ -112,7 +112,7 @@
               <img src="resources/images/pasta.jpg" alt="" class="recipe-picture">
             </div>
             <div class="recipe-description">
-              <h3 class="recipe-name"><a href="recipe-page.html">Pasta With Gorgonzola Sauce</a></h3>
+              <h3 class="recipe-name"><a class="recipe-name-link" href="recipe-page.html">Pasta With Gorgonzola Sauce</a></h3>
               <p class="calories">Calories: </p>
               <p class="protein">Protein: </p>
               <p class="fat">Fat: </p>
@@ -124,7 +124,7 @@
               <img src="resources/images/pasta.jpg" alt="" class="recipe-picture">
             </div>
             <div class="recipe-description">
-              <h3 class="recipe-name"><a href="recipe-page.html">Pasta With Gorgonzola Sauce</a></h3>
+              <h3 class="recipe-name"><a class="recipe-name-link" href="recipe-page.html">Pasta With Gorgonzola Sauce</a></h3>
               <p class="calories">Calories: </p>
               <p class="protein">Protein: </p>
               <p class="fat">Fat: </p>
@@ -134,9 +134,9 @@
         </div>
       </div>
     </div>
-    <footer>
+    <footer class="footer">
       <a class="github-link" href="https://github.com/ixtreme3">
-        <img src="resources/icons/github.png" width="30px" height="30px">
+        <img class="github-image" src="resources/icons/github.png" width="30" height="30">
         <div>Ivan Nemtsev</div>
       </a>
     </footer>

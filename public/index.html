@@ -16,34 +16,34 @@
     <div class="root">
       <div class="centered">
 
-        <header>
+        <header class="header">
           <a class="logo-image" href=" ">
             <img src="resources/icons/header-logo.svg" width="100" height="100">
           </a>
           <div class="logo-text">Spoonacular client</div>
           <div class="menu">
-            <ul>
-              <li class="search-recipe-button"><a href="search-recipes.html">Search Recipes</a></li>
-              <li class="random-recipes-button"><a href="random-recipes-page.html">Get Random Recipes</a></li>
+            <ul class="menu-elements-list">
+              <li class="search-recipe-button"><a class="menu-button-link" href="search-recipes.html">Search Recipes</a></li>
+              <li class="random-recipes-button"><a class="menu-button-link" href="random-recipes-page.html">Get Random Recipes</a></li>
             </ul>
           </div>
         </header>
 
         <div class="grid-container">
           <div class="main-text-block">
-            <h2>Smarter recipe search than ever</h2>
-            <p>Spoonacular API uses complex food ontology which makes it possible to understand the relationships between ingredients, recipes, nutrition, allergens, and more.</p>
-            <p>Service understands that "nut free" muffins can't contain pecans (even if the recipe doesn't mention "nuts" anywhere!) and automatically determines that a recipe with Worcestershire sauce isn't vegetarian.</p>
-            <p>Go ahead and try one of the available endpoints!</p>
+            <h2 class="main-text-heading">Smarter recipe search than ever</h2>
+            <p class="main-text-description">Spoonacular API uses complex food ontology which makes it possible to understand the relationships between ingredients, recipes, nutrition, allergens, and more.</p>
+            <p class="main-text-description">Service understands that "nut free" muffins can't contain pecans (even if the recipe doesn't mention "nuts" anywhere!) and automatically determines that a recipe with Worcestershire sauce isn't vegetarian.</p>
+            <p class="main-text-description">Go ahead and try one of the available endpoints!</p>
           </div>
 
-          <img src="resources/images/ontology.svg" class="ontology-image" width="390px" height="405px">
+          <img src="resources/images/ontology.svg" class="ontology-image" width="390" height="405">
 
           <div class="semantic-search-block">
-            <h2>SEMANTIC SEARCH</h2>
+            <h2 class="semantic-search-block-description">SEMANTIC SEARCH</h2>
             <div class="circles-block">
               <div class="logo-circle">
-                <img src="resources/icons/logo-simple-framed-green-gradient.svg" width="120px" height="120px">
+                <img src="resources/icons/logo-simple-framed-green-gradient.svg" width="120" height="120">
               </div>
               <div class="arrow"></div>
               <div class="circle query-circle">
@@ -62,18 +62,18 @@
                 Right Results
               </div>
             </div>
-            <div class="description-block">
-              <div class="description"></div>
-              <div class="description">
+            <div class="circles-description-block">
+              <div class="circle-description"></div>
+              <div class="circle-description">
                 “Gluten free muffins without nuts”
               </div>
-              <div class="description">
-                <b>Category</b>: muffins <b>No gluten</b> (-wheat, -spelt) <b>No nuts</b> (-pecans, -almonds)
+              <div class="circle-description">
+                <span class="bold-text">Category</span>: muffins <span class="bold-text">No gluten</span> (-wheat, -spelt) <span class="bold-text">No nuts</span> (-pecans, -almonds)
               </div>
-              <div class="description">
+              <div class="circle-description">
                 372 matching recipes
               </div>
-              <div class="description">
+              <div class="circle-description">
                 Carrot Oat Muffins
               </div>
             </div>
@@ -82,9 +82,9 @@
 
       </div>
     </div>
-    <footer>
+    <footer class="footer">
       <a class="github-link" href="https://github.com/ixtreme3">
-        <img src="resources/icons/github.png" width="30px" height="30px">
+        <img class="github-image" src="resources/icons/github.png" width="30" height="30">
         <div>Ivan Nemtsev</div>
       </a>
     </footer>
